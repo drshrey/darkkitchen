@@ -1,0 +1,17 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports: 
+      - 3000:3000
+      - 35729:35729
+  backend:
+    build: ./backend
+    ports: 
+      - 8080:8080
+    volumes:
+      - ./backend:/go/src/github.com/drshrey/darkkitchen/backend/      
+  

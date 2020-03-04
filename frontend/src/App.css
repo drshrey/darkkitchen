@@ -1,0 +1,8 @@
+.App {
+  text-align: left;
+  margin: 50px;
+}
+
+td, tr {
+  padding: 3px;
+}
